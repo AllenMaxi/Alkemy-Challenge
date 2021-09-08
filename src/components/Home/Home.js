@@ -59,7 +59,7 @@ const Home = () => {
           {Myteam && Myteam.team.length > 0 ? (
             Myteam.team.map((hero) => {
               return (
-                <div className="col-sm-5" key={hero.name}>
+                <div className="col-sm-6" key={hero.name}>
                   {" "}
                   <HeroCard hero={hero} />{" "}
                 </div>

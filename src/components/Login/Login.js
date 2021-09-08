@@ -44,7 +44,6 @@ const Login = () => {
 
   return (
     <div id="login">
-      <h3 className="text-center text-dark pt-5">Login form</h3>
       <div className="container">
         <div
           id="login-row"

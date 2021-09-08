@@ -11,7 +11,7 @@ const Navbar = () => {
     <section className="bg-black">
       <div className="text-center">
         <Link to="/" className="text-decoration-none">
-          <h2 className="text-info">Let this adventure begin</h2>
+          <h2 className="text-info pt-3">Let this adventure begin</h2>
         </Link>
       </div>
       <div>

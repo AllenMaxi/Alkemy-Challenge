@@ -25,16 +25,21 @@ const SearchResults = () => {
   return (
     <>
       <Navbar />
-      <div>
-        <div className="text-center">
+      <div className="container">
+        <div>
           <button className="btn btn-info m-2" onClick={() => history.goBack()}>
             Check your team
           </button>
         </div>
         <div className="row text-center">
           {hero ? (
-            hero.map((h, i) => {
-              return <HeroCard hero={h} key={i} />;
+            hero.map((hero) => {
+              return (
+                <div className="col-sm-6" key={hero.name}>
+                  {" "}
+                  <HeroCard hero={hero} />{" "}
+                </div>
+              );
             })
           ) : (
             <p>{error}</p>

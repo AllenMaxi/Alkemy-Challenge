@@ -43,14 +43,11 @@ const HeroCard = ({ hero }) => {
   };
 
   return (
-    <div
-      className="card ms-3 mb-2 bg-black animate__animated animate__fadeIn"
-      style={{ maxWidth: 600 }}
-    >
+    <div className="card mb-2 bg-dark  animate__animated animate__fadeIn">
       <div className="no-gutters">
         <img
           src={image.url}
-          className="card-img border border-5 border-dark w-50"
+          className="card-img border border-5 border-dark w-50 rounded-circle"
           alt={name}
         />
         <div>
