@@ -15,7 +15,9 @@ const Home = () => {
     <div className="w-100">
       <Navbar />
       <div className="animate__animated animate__fadeIn container">
-        <h1 className="text-center">Best Hero Team</h1>
+        <h1 className="text-center">
+          Best Hero <span className="text-primary">Team</span>
+        </h1>
         <div className="mb-5">
           <h3 className="mb-3">Choose your Heroes</h3>
           <Search />
@@ -66,7 +68,10 @@ const Home = () => {
               );
             })
           ) : (
-            <h4 className="text-dark">start building your team of heroes</h4>
+            <h3 className="text-dark">
+              Start building your team of{" "}
+              <span className="text-primary">Heroes</span>
+            </h3>
           )}
         </div>
       </div>

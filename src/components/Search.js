@@ -17,16 +17,23 @@ const Search = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        className=""
-        type="text"
-        name="hero"
-        placeholder="Choose your SuperHero"
-        onChange={handleInputChange}
-      />
-      <button type="submit" className="btn btn-dark">
-        Search
-      </button>
+      <div className="input-group mb-3">
+        <input
+          type="text"
+          className="form-control"
+          placeholder="Choose your hero"
+          name="hero"
+          onChange={handleInputChange}
+        />
+        <div className="input-group-append">
+          <button
+            className="btn btn-outline-secondary btn-primary text-white"
+            type="submit"
+          >
+            Button
+          </button>
+        </div>
+      </div>
     </form>
   );
 };
